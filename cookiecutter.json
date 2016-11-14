@@ -3,6 +3,6 @@
     "project_name": "Another DS Project",
     "analysis_question": "What is the purpose of the analysis?",
     "python_version": "3", 
-    "python_libraries": "pandas numpy matplotlib seaborn statsmodels scikit-learn", 
+    "python_libraries": "pandas numpy matplotlib seaborn statsmodels scikit-learn ipykernel", 
     "git_usage": ["Yes", "No"]
 }
