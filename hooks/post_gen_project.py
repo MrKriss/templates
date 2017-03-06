@@ -12,11 +12,9 @@ PYTHON_VERSION = "{{cookiecutter.python_version}}"
 PYTHON_LIBRARIES = "{{cookiecutter.python_libraries}}"
 
 # Create the strings for commands to run, substituting with the values from cookiecutter 
-conda_install_cmd_tpl = "conda create -y -n {project_name} python={python_version} {python_libraries}"
-conda_install_cmd = conda_install_cmd_tpl.format(project_name=PROJECT_NAME,
-                                                 python_version=PYTHON_VERSION,
-                                                 python_libraries=PYTHON_LIBRARIES)
-conda_save_env_cmd = "conda env export -n {project_name} -f environment.yml".format(project_name=PROJECT_NAME)
+conda_install_cmd = f"conda create -y -n {PROJECT_NAME} python={PYTHON_VERSION} {PYTHON_LIBRARIES}"
+
+conda_save_env_cmd = f"conda env export -n {PROJECT_NAME} -f environment.yml"
 
 # Execute command with subprocess module
 print('Installing conda environment for %s ...' % PROJECT_NAME)
