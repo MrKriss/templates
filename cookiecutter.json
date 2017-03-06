@@ -1,6 +1,8 @@
 {
     "project_name": "myflaskapp",
     "remote_host": "vps375694.ovh.net", 
-    "remote_username": "cmusselle", 
-    "miniconda_dir": "/home/{{cookiecutter.remote_username}}/miniconda3"
+    "remote_username": "cmusselle",
+    "miniconda_dir": "/home/{{cookiecutter.remote_username}}/miniconda3",
+    "python_libraries": "flask",
+    "use_git": ["Yes", "No"]
 }
