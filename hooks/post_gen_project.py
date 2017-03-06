@@ -7,7 +7,7 @@ import subprocess
 import shlex
 
 # The string in these variables will be overriden by cookiecutter
-PROJECT_NAME = "{{cookiecutter.project_name|lower|replace(' ', '_')}}"
+PROJECT_NAME = "{{cookiecutter.package_name|lower|replace(' ', '_')}}"
 PYTHON_VERSION = "{{cookiecutter.python_version}}"
 PYTHON_LIBRARIES = "{{cookiecutter.python_libraries}}"
 

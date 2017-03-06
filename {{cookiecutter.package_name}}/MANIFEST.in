@@ -1,0 +1,1 @@
+include {{cookiecutter.package_name}}/default_config.ini
