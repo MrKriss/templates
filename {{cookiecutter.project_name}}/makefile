@@ -11,5 +11,5 @@ load:
 
 # Uninstall environment 
 remove: 
-	conda env remove -n {{cookiecutter.project_name}} -f environment.yml
+	conda env remove -n {{cookiecutter.project_name}}
 

@@ -10,7 +10,6 @@ This is a quick Proof of Concept analysis piece that aims to answer the followin
 
 ## Quick Start
 
-Experiments are contained in individual Jupyter notebooks in the `notebooks/` directory. 
-
-Supporting code is in a python package in `notebooks/lib`
+Experiments are contained in individual Jupyter notebooks in the `analysis/` directory along with 
+supporting code in python modules. 
 
