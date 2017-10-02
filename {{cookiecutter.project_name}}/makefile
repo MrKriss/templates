@@ -1,15 +1,17 @@
 
+ENV_NAME = {{cookiecutter.project_name|lower|replace(' ', '_')}}
+
 .PHONY:load save remove
 
 # Save new snapshot of environment 
 save: 
-	conda env export -n {{cookiecutter.project_name}} -f environment.yml
+	conda env export -n $(ENV_NAME) -f environment.yml
 
 # Load/update env based on environment file
-load: 
-	conda env update -n {{cookiecutter.project_name}} -f environment.yml
+update: 
+	conda env update -n $(ENV_NAME) -f environment.yml
 
 # Uninstall environment 
 remove: 
-	conda env remove -n {{cookiecutter.project_name}}
+	conda env remove -n $(ENV_NAME)
 

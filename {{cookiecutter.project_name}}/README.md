@@ -2,7 +2,7 @@
 
 This is a quick Proof of Concept analysis piece that aims to answer the following question:
 
-> {{cookiecutter.analysis_question}}
+> {{ cookiecutter.analysis_question }}
 
 ### Authors
 
