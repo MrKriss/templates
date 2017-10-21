@@ -19,7 +19,7 @@ conda_install_cmd = f"conda create -y -n {PROJECT_NAME} python={PYTHON_VERSION} 
 conda_save_env_cmd = f"conda env export -n {PROJECT_NAME} -f frozen_environment.yml"
 
 # Execute command with subprocess module
-print(f'Installing conda environment for {ROJECT_NAME} ...')
+print(f'Installing conda environment for {PROJECT_NAME} ...')
 subprocess.run(shlex.split(conda_install_cmd))
 print(f'Finished installing conda environment for {PROJECT_NAME}')
 
