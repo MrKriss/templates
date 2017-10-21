@@ -10,6 +10,6 @@ This is a quick Proof of Concept analysis piece that aims to answer the followin
 
 ## Quick Start
 
-Experiments are contained in individual Jupyter notebooks in the `analysis/` directory along with 
-supporting code in python modules. 
+Notebooks in the `analysis/` directory are numbered sequentially and represent individual steps and/or experiments. Stepping through them in order will recreate the steps. Supporting code is contained in python modules in the same directory. 
 
+Note that [python-dotenv](https://github.com/theskumar/python-dotenv) is used to load any secret keys and passwords from a `.env` file in the root directory of this project. If storing secret info is required, you will need to create this file. 
