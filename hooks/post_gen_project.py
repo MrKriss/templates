@@ -14,8 +14,10 @@ PYTHON_VERSION = "{{cookiecutter.python_version}}"
 PYTHON_LIBRARIES = "{{cookiecutter.python_libraries}}"
 GIT_USAGE = "{{cookiecutter.git_usage}}" == "Yes"
 
+CORE_LIBS = "python-dotenv"
+
 # Create the strings for commands to run, substituting with the values from cookiecutter
-conda_install_cmd = f"conda create -y -n {PROJECT_NAME} python={PYTHON_VERSION} {PYTHON_LIBRARIES}"
+conda_install_cmd = f"conda create -y -n {PROJECT_NAME} python={PYTHON_VERSION} {CORE_LIBS} {PYTHON_LIBRARIES}"
 conda_save_env_cmd = f"conda env export -n {PROJECT_NAME} -f frozen_environment.yml"
 
 # Execute command with subprocess module
