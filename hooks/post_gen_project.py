@@ -10,8 +10,13 @@ import shlex
 
 # The string in these variables will be overriden by cookiecutter
 PROJECT_NAME = "{{cookiecutter.project_name | lower | replace(' ', '_')}}"
+
 PYTHON_VERSION = "{{cookiecutter.python_version}}"
+
 PYTHON_LIBRARIES = "{{cookiecutter.python_libraries}}"
+if PYTHON_LIBRARIES == "NONE":
+    PYTHON_LIBRARIES = ""
+
 GIT_USAGE = "{{cookiecutter.git_usage}}" == "Yes"
 
 CORE_LIBS = "python-dotenv"
