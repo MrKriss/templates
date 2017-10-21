@@ -19,18 +19,18 @@ conda_install_cmd = f"conda create -y -n {PROJECT_NAME} python={PYTHON_VERSION} 
 conda_save_env_cmd = f"conda env export -n {PROJECT_NAME} -f frozen_environment.yml"
 
 # Execute command with subprocess module
-print(f'Installing conda environment for {PROJECT_NAME} ...')
+print(f'--------------------------------- Installing conda environment for {PROJECT_NAME} ...')
 subprocess.run(shlex.split(conda_install_cmd))
-print(f'Finished installing conda environment for {PROJECT_NAME}')
+print(f'------------------------ Finished installing conda environment for {PROJECT_NAME}')
 
-print('Saving snapshot of conda environment to "frozen_environment.yml" ... ')
+print('---------------- Saving snapshot of conda environment to "frozen_environment.yml" ... ')
 subprocess.run(shlex.split(conda_save_env_cmd))
-print(f'Finished installing conda environment for {PROJECT_NAME}')
+print(f'---------------- Finished saving snapshot of conda environment for {PROJECT_NAME}')
 
 # If using git, initialise the repo.
 if GIT_USAGE:
-    print(f'Initialising git repo and creating initial commit for {PROJECT_NAME} ...')
+    print(f'-------- Initialising git repo and creating initial commit for {PROJECT_NAME} ...')
     subprocess.run(shlex.split('git init'))
     subprocess.run(shlex.split('git add *'))
     subprocess.run(shlex.split('git commit -m "Initial commit of project template"'))
-    print(f'Finished initialising git repo for {PROJECT_NAME}')
+    print(f'--------------------------- Finished initialising git repo for {PROJECT_NAME}')
