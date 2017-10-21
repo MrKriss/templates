@@ -1,12 +1,13 @@
-# templates
-cookiecutter templates for data science and development
+# Templates
+
+A basic cookiecutter template for EDA in data science projects
 
 ## Requirements 
 
-* Python 2.7 / 3.4+
+* Python >= 3.6
 * [cookiecutter](https://github.com/audreyr/cookiecutter). Can be installed with `pip install cookiecutter`
 
-## Basic Usage for Default Template
+## Usage 
 
     cookiecutter gh:MrKriss/templates 
 
