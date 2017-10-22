@@ -10,19 +10,11 @@ import shlex
 
 # The string in these variables will be overriden by cookiecutter
 PROJECT_NAME = "{{cookiecutter.project_name | lower | replace(' ', '_')}}"
-
 PYTHON_VERSION = "{{cookiecutter.python_version}}"
-
-PYTHON_LIBRARIES = "{{cookiecutter.python_libraries}}"
-if PYTHON_LIBRARIES == "NONE":
-    PYTHON_LIBRARIES = ""
-
 GIT_USAGE = "{{cookiecutter.git_usage}}" == "Yes"
 
-CORE_LIBS = "python-dotenv"
-
 # Create the strings for commands to run, substituting with the values from cookiecutter
-conda_install_cmd = f"conda create -y -n {PROJECT_NAME} python={PYTHON_VERSION} {CORE_LIBS} {PYTHON_LIBRARIES}"
+conda_install_cmd = ("conda env create -f dev_environment.yml")
 conda_save_env_cmd = f"conda env export -n {PROJECT_NAME} -f frozen_environment.yml"
 
 # Execute command with subprocess module
