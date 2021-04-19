@@ -1,0 +1,12 @@
+# This toml file for settings is read by the dynaconf library
+# https://www.dynaconf.com/
+
+# Path to the logfile
+logging.filename = "output.log"
+# Level of Logging
+#   From most detailed output to least these are:
+#       debug
+#       info
+#       warning
+#       error
+logging.level = "info"

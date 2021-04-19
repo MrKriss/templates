@@ -1,17 +1,11 @@
 {
     "author": "cmusselle",
-    "project_name": "Another DS Project",
-    "analysis_question": "What is the purpose of the analysis?",
-    "python_version": "3.6",
-    "python_libraries": [
-        "NONE",
-        "ipython",
-        "jupyter",
-        "jupyter pandas matplotlib",
-        "jupyter pandas matplotlib seaborn scikit-learn",
-        "jupyter pandas matplotlib seaborn scikit-learn statsmodels"
-    ],
-    "git_usage": [
+    "project_name": "New Project",
+    "package_name": "{{cookiecutter.project_name|lower|replace('-', '_')|replace(' ', '_')}}",
+    "package_description": "What is the purpose of the package?",
+    "python_version": "3.8",
+    "python_libraries": "pandas numpy matplotlib seaborn statsmodels scikit-learn",
+    "use_git": [
         "Yes",
         "No"
     ]
